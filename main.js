@@ -30,12 +30,27 @@ ADVANCED TRACK: 16-20
 
 // 1. Output each item in the following Array to your console:
 var livingRoom = ['couch', 'lamp', 'rug', 'shelf'];
+for(i=0;i< livingRoom.length;i++){
+	console.log(livingRoom[i]);
+}
 
 // 2. Using a loop, log numbers 22-33 in the console.
+for(i=22;i< 34;i++){
+	console.log(i);
+}
 
 // 3. Using a similar loop, log numbers 75 to 100, only in increments of five.
+for(i=75;i<= 100;i=i+5){
+	console.log(i);
+}
 
 // 4. Write a while loop that logs "This is how a professional loops." to the console 5 times.
+var counter=1;
+while (counter < 6) {  
+  console.log("This is how a professional loops");         
+  counter++;
+}
+ 
 
 // 5. Separately, use both a for loop and while loop to do the same thing.
 //     Print out the sentence "At home, I have _____ cats."
@@ -45,6 +60,19 @@ var livingRoom = ['couch', 'lamp', 'rug', 'shelf'];
 //    number is even and greater than 10, and 'Odd' if the number is odd.
 //    HINT: Google 'remainder operator'
 var numArray = [2, 17, 9, 24, 8];
+for(i=0; i< numArray.length; i++){
+	if((numArray[i]%2===0)&& (numArray[i]>10)){
+		console.log("Number is: "+ numArray[i] + " Even and greater than 10");
+	}
+	else if((numArray[i]%2===0)&& (numArray[i]<10)){
+		console.log("Number is: "+ numArray[i] + " Even");
+		
+	} 
+	else {
+		console.log("Number is: "+numArray[i] + " Odd");
+	}
+}
+
 
 // 7. Using the following Array, create variable called numThrees with the value [13, 23, 33, 43, 53, 63, 73]
 var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77]
@@ -58,11 +86,20 @@ var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 
 // ######
 // #######
 
+for(i=1; i<=6; i++){
+	for(j=1; j<=i; j++){
+		console.log("* ");
+	}
+	console.log("\n");
+}
+
 // 9. FIZZ BUZZ
 // Write a program that uses console.log to print each number up to 100, with a couple exceptions...
 // If the number is divisible by 3, print "Fizz" instead of the number.
 // If the number is divisible by 5, print "Buzz" instead of the number.
 // If the number is divisible by both 3 and 5, print "FizzBuzz" instead of the number.
+
+
 
 // RO SHAM BO!
 // We're going to create a paper, rock, scissors game that prompts you for your choice and allows the computer to
