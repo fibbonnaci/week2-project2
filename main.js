@@ -134,11 +134,64 @@ for(i=1; i <=100; i++){
 // 15. Give yourself a high five for completing your first javascript game!
 // BONUS: What happens if your user enters something other than "rock", "paper", or "scissors?". Change your default case
 //     to print a snarky message to the console if the input doesn't match any of the options.
+var human= prompt("Choose Rock/ Paper/ Scissor", "Rock");
+var computer= Math.random();
+var compResponse;
+if (0<=computer<= 0.33){
+	compResponse="Rock";
+	
+}else if(0.34<= computer <= 0.66){
+	compResponse= "Paper";
+}
+else if(0.67<= computer <= 1){
+	compResponse= "Scissor";
+}
+console.log("Computer choice is: "+ compResponse);
+
+
+	if (human=== compResponse){
+		console.log("It is a tie! Play again");
+	}else if(human=== "Rock"){
+		if (compResponse==="Scissor"){
+			console.log("Rock wins");
+		}else{
+			console.log("Paper wins");
+		}
+	}else if(human==="Paper"){
+		if (compResponse==="Rock"){
+			console.log("Paper wins");
+		}else{
+			console.log("Scissor wins");
+		}
+	}else if(human==="Scissor"){
+		if(compResponse==="Rock"){
+			console.log("Rock wins");
+		}else{
+			console.log("Paper wins");
+		}
+		
+	}else {
+		console.log("Naughty!Stay on track");
+	}
+
 
 
 // ADVANCED TRACK
 // 16. Write a conditional statement to find the largest of the numbers in the array provided.
 var largestNum = [-5, -2, -6, 0, -1]
+var smallest,largest;
+smallest= largestNum[0];
+largest= largestNum[0];
+for(i=1;i<=largestNum.length;i++){
+	if(largestNum[i]>largest){
+		largest= largestNum[i];
+	}
+	else if(largestNum[i]<smallest){
+		smallest= largestNum[i];
+	}
+}
+console.log("Largest number is: " +largest);
+console.log("Smallest number is: "+ smallest);
 
 // HEADS OR TAILS?
 // 17. Use the following variable for your coin flip action:
@@ -148,6 +201,13 @@ var largestNum = [-5, -2, -6, 0, -1]
 //     Calling Math.floor on that number will truncate the decimal, and give you a
 //     random number within the bounds of your array. (In this case, our array will only contain two items.)
 // 18. Use a do/while loop to keep flipping the coin until you get tails.
+
+var coin;
+ do{
+ 	coin = (Math.floor(Math.random() * 2)===0)? 'heads':'tails';
+ 	console.log ("Choice is: "+ coin);
+ }while (coin==='heads');
+ 	
 
 // CHESS BOARD
 // 19. Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines.
