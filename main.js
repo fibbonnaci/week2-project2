@@ -77,6 +77,7 @@ for(i=0; i< numArray.length; i++){
 // 7. Using the following Array, create variable called numThrees with the value [13, 23, 33, 43, 53, 63, 73]
 var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77]
 
+
 // 8. Write a loop that outputs the following to the console:
 // #
 // ##
@@ -86,13 +87,14 @@ var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 
 // ######
 // #######
 
+var output="";
 for(i=1; i<=6; i++){
 	for(j=1; j<=i; j++){
-		console.log("* ");
+		output+="* ";
 	}
-	console.log("\n");
+	output+="\n";
 }
-
+console.log(output);
 // 9. FIZZ BUZZ
 // Write a program that uses console.log to print each number up to 100, with a couple exceptions...
 // If the number is divisible by 3, print "Fizz" instead of the number.
@@ -224,5 +226,39 @@ var coin;
 //  # # # #
 // # # # #
 
+var output= "";
+for(i=0;i<8;i++){
+	for(j=0;j<8;j++){
+	if((i+j)%2===0){
+		output+=" ";
+		
+
+	}else {
+		output+="#";
+		
+	}
+	}
+	output+= '\n';
+}
+console.log(output);
+
+
 // 20. When you have a program that generates this pattern, define a variable size = 8 and change the program
 // sso that it works for any size, outputting a grid of the given width and height.
+var size=8;
+var output= "";
+for(i=0;i<size;i++){
+	for(j=0;j<size;j++){
+	if((i+j)%2===0){
+		output+=" ";
+		
+
+	}else {
+		output+="#";
+		
+	}
+	}
+	output+= '\n';
+}
+console.log(output);
+
