@@ -75,8 +75,13 @@ for(i=0; i< numArray.length; i++){
 
 
 // 7. Using the following Array, create variable called numThrees with the value [13, 23, 33, 43, 53, 63, 73]
-var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77]
-
+var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77];
+var numThrees=[];
+for (i=0;i<numArray.length;i=i+3){
+	var d= numArray[i];
+	numThrees.push(d);
+}
+console.log(numThrees);
 
 // 8. Write a loop that outputs the following to the console:
 // #
@@ -90,7 +95,7 @@ var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 
 var output="";
 for(i=1; i<=6; i++){
 	for(j=1; j<=i; j++){
-		output+="* ";
+		output+="# ";
 	}
 	output+="\n";
 }
